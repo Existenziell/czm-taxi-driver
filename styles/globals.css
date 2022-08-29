@@ -1,3 +1,43 @@
+/* --------------------------------------------------------
+Style Sheet for CZM Taxi Driver App
+
+version: 0.9
+author: Christof Bauer
+email: bauer.christof@gmail.com
+----------------------------------------------------------*/
+
+:root {
+  --color-brand: #DBDBDB;
+  --color-brand-dark: #242424;
+  --color-cta: #D6A269;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::selection {
+  @apply text-cta bg-brand-dark;
+}
+
+::-moz-selection {
+  @apply text-cta bg-brand-dark;
+}
+
+html, body {
+	scroll-behavior: smooth;
+}
+
+
+/* ==========================================================================
+	Buttons 
+	========================================================================== */
+
+.button {
+  @apply w-max px-4 py-2 rounded-sm text-sm text-white flex items-center justify-center bg-brand-dark
+    hover:cursor-pointer hover:shadow hover:text-cta transition-all;
+}
+
+.button-cta {
+  @apply text-white bg-cta transition-all;
+}
