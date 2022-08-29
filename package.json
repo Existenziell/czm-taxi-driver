@@ -2,6 +2,7 @@
   "name": "czm-taxi-driver",
   "version": "0.1.0",
   "private": false,
+  "author": "Christof Bauer <bauer.christof@gmail.com> (http://christof.digital/)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

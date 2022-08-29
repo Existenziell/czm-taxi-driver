@@ -1,3 +1,4 @@
+import 'tailwindcss/tailwind.css'
 import '../styles/globals.css'
 import { AppProvider } from '../context/AppContext'
 import Layout from '../components/_Layout'

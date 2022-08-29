@@ -34,7 +34,7 @@ const Sidebar = () => {
     <AnimatePresence>
       <motion.div key={'sidebar'}
         animate={{ x: open ? 0 : -280 }}
-        className={`${open ? '' : 'opacity-50'} transition-opacity w-max -left-8 absolute top-28 bottom-10 overflow-hidden bg-cta z-20 rounded-tr-lg rounded-br-lg pl-10 pr-4 py-4`}>
+        className={`${open ? '' : 'opacity-60'} transition-opacity w-max -left-8 absolute top-28 bottom-10 overflow-hidden bg-cta z-20 rounded-tr-lg rounded-br-lg pl-12 pr-4 py-4`}>
         <ul>
           {receivedRequests.map(request => {
             const { ride, price, pickup, dropoff, duration, distance } = request.data
