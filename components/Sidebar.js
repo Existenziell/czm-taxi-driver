@@ -47,14 +47,14 @@ const Sidebar = () => {
                     {pickup} <ArrowLongRightIcon className='w-6 relative bottom-[1px] inline-block' /> {dropoff} ({ride})<br />
                     {distance.toFixed(2)}km - {parseInt(duration / 60)}min - ${price}
                   </p>
-                  <button onClick={() => handleTakeover(request.data)} className='button'>Take</button>
+                  <button onClick={() => handleTakeover(request.data)} className='button' aria-label="Take Ride">Take</button>
                 </div>
               </li>
             )
           })}
         </ul>
         <div className="absolute right-0 top-1/2">
-          <button onClick={() => (setOpen(!open))}>
+          <button onClick={() => (setOpen(!open))} aria-label="Toggle Sidepanel">
             {open ?
               <ChevronDoubleLeftIcon className='text-brand-dark w-10 hover:text-black' />
               :
